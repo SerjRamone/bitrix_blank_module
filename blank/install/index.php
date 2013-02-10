@@ -2,7 +2,7 @@
 /**
  * Инсталляция модуля serjramon
  *
- * @author  Sergey Greznov
+ * @author  Sergey Greznov — Fusion LLC
  * @since   14/01/2013
  *
  * @link    http://www.efusion.ru/
@@ -19,11 +19,14 @@ IncludeModuleLangFile($strPath2Lang . "/install/index.php");
 
 class blank extends CModule {
 
-	public $MODULE_ID = 'blank';
+	public $MODULE_ID = 'fusion.blank';
 	public $MODULE_VERSION = '1.0.0';
 	public $MODULE_VERSION_DATE = '2013-01-14 09:00:00';
 	public $MODULE_NAME;
 	public $MODULE_DESCRIPTION;
+	
+	public $PARTNER_NAME = 'Веб-интегратор Fusion'; 
+	public $PARTNER_URI = 'http://www.efusion.ru/';
 
 	/**
 	 * Инициализация модуля для страницы "Управление модулями"
