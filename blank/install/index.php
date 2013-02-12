@@ -19,14 +19,14 @@ IncludeModuleLangFile($strPath2Lang . "/install/index.php");
 
 class blank extends CModule {
 
-	public $MODULE_ID = 'fusion.blank';
-	public $MODULE_VERSION = '1.0.0';
-	public $MODULE_VERSION_DATE = '2013-01-14 09:00:00';
-	public $MODULE_NAME;
-	public $MODULE_DESCRIPTION;
-	
-	public $PARTNER_NAME = 'Веб-интегратор Fusion'; 
-	public $PARTNER_URI = 'http://www.efusion.ru/';
+	var $MODULE_ID = 'fusion.blank';
+	var $MODULE_VERSION = '1.0.0';
+	var $MODULE_VERSION_DATE = '2013-01-14 09:00:00';
+	var $MODULE_NAME;
+	var $MODULE_DESCRIPTION;
+
+	var $PARTNER_NAME;
+	var $PARTNER_URI;
 
 	/**
 	 * Инициализация модуля для страницы "Управление модулями"
@@ -34,6 +34,9 @@ class blank extends CModule {
 	public function blank() {
 		$this -> MODULE_NAME = GetMessage('AUTHORIZE_BM_MODULE_NAME');
 		$this -> MODULE_DESCRIPTION = GetMessage('AUTHORIZE_BM_MODULE_DESC');
+
+		$this -> $PARTNER_NAME = 'Веб-интегратор Fusion';
+		$this -> $PARTNER_URI = 'http://www.efusion.ru/';
 	}
 
 	/**
