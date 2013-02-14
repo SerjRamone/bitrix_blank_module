@@ -32,11 +32,11 @@ class blank extends CModule {
 	 * Инициализация модуля для страницы "Управление модулями"
 	 */
 	public function blank() {
-		$this -> MODULE_NAME = GetMessage('AUTHORIZE_BM_MODULE_NAME');
-		$this -> MODULE_DESCRIPTION = GetMessage('AUTHORIZE_BM_MODULE_DESC');
+		$this -> MODULE_NAME = GetMessage('FUSION_MODULE_NAME');
+		$this -> MODULE_DESCRIPTION = GetMessage('FUSION_MODULE_DESC');
 
-		$this -> $PARTNER_NAME = 'Веб-интегратор Fusion';
-		$this -> $PARTNER_URI = 'http://www.efusion.ru/';
+		$this -> $PARTNER_NAME = GetMessage('FUSION_PARTNER_NAME');
+		$this -> $PARTNER_URI = GetMessage('FUSION_PARTNER_URI');
 	}
 
 	/**

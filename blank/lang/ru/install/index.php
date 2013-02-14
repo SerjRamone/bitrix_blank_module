@@ -8,6 +8,8 @@
  * @link    http://www.efusion.ru/
  */
 
-$MESS['AUTHORIZE_BM_MODULE_NAME']  = 'Первый модуль';
-$MESS['AUTHORIZE_BM_MODULE_DESC']  = 'Первый модуль описание';
+$MESS['FUSION_MODULE_NAME']  	= 'Первый модуль';
+$MESS['FUSION_MODULE_DESC']  	= 'Первый модуль описание';
+$MESS['FUSION_PARTNER_NAME']  	= 'Веб-интегратор Fusion';
+$MESS['FUSION_PARTNER_URI']  	= 'http://www.efusion.ru/';
 ?>
